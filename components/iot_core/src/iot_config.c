@@ -52,7 +52,7 @@ iot_err_t iot_config_set_defaults(iot_runtime_cfg_t *out)
     }
     (void)memset(out, 0, sizeof(*out));
     (void)memcpy(out->device_id, "esp32c3-unprovisioned", 22);
-    (void)memcpy(out->mqtt_uri, "mqtts://mqtt.local:8883", 24);
+    (void)memcpy(out->mqtt_uri, "mqtt://10.72.217.50:1883", 24);
     out->sample_period_ms = 1000U;
     out->cloud = IOT_CLOUD_GENERIC;
     out->provisioned = false;

@@ -93,9 +93,13 @@ iot_err_t iot_uc_plt_ota(const iot_uc_in_t *in, iot_uc_out_t *out)
         }
         url = local;
     } else {
-        (void)snprintf(local, sizeof(local), "%s", url);
-        url = local;
+    if (strlen(url) >= sizeof(local)) {
+        iot_uc_out_err(out, IOT_UC_PLT_OTA, IOT_ERR_INVALID_ARG);
+        return IOT_ERR_INVALID_ARG;
     }
+    strcpy(local, url);
+    url = local;
+}
     iot_err_t e = iot_ota_start(url);
     iot_uc_out_ok(out, IOT_UC_PLT_OTA, "{\"uc\":\"plt.ota\",\"started\":1}");
     out->err = e;

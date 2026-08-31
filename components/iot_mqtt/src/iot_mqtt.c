@@ -137,7 +137,9 @@ iot_err_t iot_mqtt_start(const iot_runtime_cfg_t *cfg)
     }
     mc.session.keepalive = 30;
     mc.network.reconnect_timeout_ms = 5000;
-    mc.broker.verification.crt_bundle_attach = esp_crt_bundle_attach;
+   if (strncmp(cfg->mqtt_uri, "mqtts://", 8U) == 0) {
+       mc.broker.verification.crt_bundle_attach = esp_crt_bundle_attach;
+   }
     s_client = esp_mqtt_client_init(&mc);
     if (s_client == NULL) {
         return IOT_ERR_NO_MEM;

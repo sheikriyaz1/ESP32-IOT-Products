@@ -1,32 +1,34 @@
+# ESP-IDF build output
 build/
-sdkconfig
-sdkconfig.old
-managed_components/
-dependencies.lock
-.vscode/.browse.c_cpp.db*
-.clangd
-compile_commands.json
+
+# Python cache
 __pycache__/
 *.pyc
-.pytest_cache/
+
+# Virtual environments
 .venv/
 venv/
-*.bin
-*.elf
-*.map
-*.html.bak
-docs/html/generated/
-tools/gui/.cache/
-*.o
-*.a
-*.exe
-host_build/
+
+# IDE files
+.vscode/
 .idea/
+
+# OS files
 .DS_Store
 Thumbs.db
+
+# Python environment / secrets
+.env
+.env.*
+
+# Local credentials/configuration
 secrets/
-*.pem
-*.key
-nvs_keys.bin
-.cache/
-docker-cache/
+credentials/
+*.secret
+
+# Logs
+*.log
+
+# Backup/temp files
+*.tmp
+*.bak

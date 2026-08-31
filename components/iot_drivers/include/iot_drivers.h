@@ -2,7 +2,7 @@
  * @file iot_drivers.h
  * @copyright Copyright (c) 2026 Embedded AI Design Labs Pvt Ltd.
  * @author    Muhammad Samiullah, CTO & Founder
- * @brief Umbrella HAL/driver header. Application code includes this, not ESP-IDF driver/*.
+  * @brief Umbrella HAL/driver header. Application code includes this, not ESP-IDF driver files.
  */
 #ifndef IOT_DRIVERS_H
 #define IOT_DRIVERS_H

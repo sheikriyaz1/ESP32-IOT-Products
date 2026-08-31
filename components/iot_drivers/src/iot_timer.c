@@ -8,6 +8,7 @@
 #include "iot_log.h"
 
 #ifdef ESP_PLATFORM
+#include "esp_attr.h"
 #include "driver/gptimer.h"
 
 static gptimer_handle_t s_tmr;

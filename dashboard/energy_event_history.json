@@ -1,0 +1,102 @@
+[
+  {
+    "time": "07:43:27",
+    "event": "TRIP / ALARM",
+    "trips": 251
+  },
+  {
+    "time": "07:43:28",
+    "event": "TRIP / ALARM",
+    "trips": 252
+  },
+  {
+    "time": "07:43:29",
+    "event": "TRIP / ALARM",
+    "trips": 253
+  },
+  {
+    "time": "07:43:30",
+    "event": "TRIP / ALARM",
+    "trips": 254
+  },
+  {
+    "time": "07:43:31",
+    "event": "TRIP / ALARM",
+    "trips": 255
+  },
+  {
+    "time": "07:43:32",
+    "event": "TRIP / ALARM",
+    "trips": 256
+  },
+  {
+    "time": "07:43:33",
+    "event": "TRIP / ALARM",
+    "trips": 257
+  },
+  {
+    "time": "07:43:34",
+    "event": "TRIP / ALARM",
+    "trips": 258
+  },
+  {
+    "time": "07:43:35",
+    "event": "TRIP / ALARM",
+    "trips": 259
+  },
+  {
+    "time": "07:43:36",
+    "event": "TRIP / ALARM",
+    "trips": 260
+  },
+  {
+    "time": "07:43:37",
+    "event": "TRIP / ALARM",
+    "trips": 261
+  },
+  {
+    "time": "07:43:38",
+    "event": "TRIP / ALARM",
+    "trips": 262
+  },
+  {
+    "time": "07:43:39",
+    "event": "TRIP / ALARM",
+    "trips": 263
+  },
+  {
+    "time": "07:43:40",
+    "event": "TRIP / ALARM",
+    "trips": 264
+  },
+  {
+    "time": "07:43:41",
+    "event": "TRIP / ALARM",
+    "trips": 265
+  },
+  {
+    "time": "07:43:42",
+    "event": "TRIP / ALARM",
+    "trips": 266
+  },
+  {
+    "time": "07:43:43",
+    "event": "TRIP / ALARM",
+    "trips": 267
+  },
+  {
+    "time": "15:25:09",
+    "event": "TRIP / ALARM",
+    "trips": 4
+  },
+  {
+    "time": "15:25:10",
+    "event": "TRIP / ALARM",
+    "trips": 5
+  },
+  {
+    "time": "15:25:11",
+    "event": "TRIP / ALARM",
+    "trips": 6
+  }
+]

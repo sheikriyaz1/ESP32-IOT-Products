@@ -353,12 +353,12 @@ void iot_timer_delete(iot_timer_t t)
 
 void iot_enter_critical(void)
 {
-    taskENTER_CRITICAL();
+    taskENTER_CRITICAL(NULL);
 }
 
 void iot_exit_critical(void)
 {
-    taskEXIT_CRITICAL();
+    taskEXIT_CRITICAL(NULL);
 }
 
 uint32_t iot_millis(void)

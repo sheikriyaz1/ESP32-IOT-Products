@@ -29,16 +29,23 @@ iot_err_t iot_profile_energy_init(void)
 
 iot_err_t iot_profile_energy_sensor(iot_telemetry_msg_t *out)
 {
+    int raw = 0;
     int mv = 0;
     iot_uc_out_t uco;
+
+    (void)iot_adc_read_raw(IOT_PIN_ADC_V, &raw);
     (void)iot_adc_read_mv(IOT_PIN_ADC_V, &mv);
+
+    IOT_LOGI(TAG, "ADC GPIO%d: raw=%d mV=%d",
+             IOT_PIN_ADC_V, raw, mv);
+
     iot_err_t e = iot_uc_energy_on_adc(mv, &uco);
     if (IOT_FAIL(e)) {
         return e;
     }
+
     return iot_services_fill_telemetry(out, uco.json);
 }
-
 iot_err_t iot_profile_energy_cmd(const iot_command_msg_t *cmd)
 {
     if ((cmd == NULL) || (cmd->payload_len == 0U)) {

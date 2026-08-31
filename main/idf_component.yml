@@ -1,6 +1,2 @@
-/**
- * @file idf_component.yml
- * @brief Main component version metadata.
- */
 dependencies:
   idf: ">=5.1"
